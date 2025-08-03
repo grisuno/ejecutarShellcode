@@ -16,6 +16,9 @@ This example is ideal for learning:
 
 ---
 
+<img width="409" height="566" alt="image" src="https://github.com/user-attachments/assets/bc82e026-2a88-4322-98dd-2e78b50e25af" />
+
+
 ## 🔧 Shellcode Functionality
 
 The included shellcode performs the following actions:
@@ -28,6 +31,9 @@ The included shellcode performs the following actions:
 👉 This is a classic **reverse shell payload**, commonly used in penetration testing and exploit development.
 
 ---
+
+<img width="824" height="565" alt="image" src="https://github.com/user-attachments/assets/b540cb3b-e96a-488d-9751-2c9566d7141c" />
+
 
 ## 🧪 Shellcode Generation
 
@@ -55,6 +61,9 @@ unsigned char shellcode[] =
 "\x6e\x2f\x73\x68\x00\x53\x48\x89\xe7\x48\x31\xf6"
 "\x48\x31\xd2\xb0\x3b\x0f\x05";
 ```
+
+<img width="238" height="558" alt="image" src="https://github.com/user-attachments/assets/dcaffaf8-9c7c-45ce-b8aa-11ddd51d6c67" />
+
 
 ## 🧰 Requirements
 - Go (version 1.18 or higher)
@@ -98,10 +107,13 @@ pwd
 Using cgo to Call C from Go
 The Go file uses import "C" to embed C code. The function ejecutarShellcode():
 
-Allocates executable memory using mmap.
-Copies the shellcode into that memory.
-Casts the memory to a function pointer and executes it.
-Memory Execution Flow
+- Allocates executable memory using mmap.
+- Copies the shellcode into that memory.
+- Casts the memory to a function pointer and executes it.
+- Memory Execution Flow
+
+<img width="1222" height="552" alt="image" src="https://github.com/user-attachments/assets/e9fef713-fe48-4a38-9260-2a762153b8b3" />
+
 
 ```c
 ⌄
@@ -117,6 +129,10 @@ memcpy(exec_mem, shellcode, shellcode_size);
 void (*ret)() = (void(*)())exec_mem;
 ret();  // Execute shellcode
 ```
+
+<img width="424" height="567" alt="image" src="https://github.com/user-attachments/assets/bf21f585-e45a-45b8-87ed-cab52a5e45e0" />
+
+
 This mimics real-world code injection and shellcode stagers used in exploits.
 
 ## 🛡️ Detection & Evasion (Advanced Notes)
@@ -133,6 +149,9 @@ This mimics real-world code injection and shellcode stagers used in exploits.
 ✅ Learn memory execution techniques
 ✅ Practice safe exploitation in labs
 ✅ Explore Go’s capabilities in offensive tools
+
+<img width="1212" height="497" alt="image" src="https://github.com/user-attachments/assets/2cdd378a-d0d8-4ab0-8f35-14c89dd69978" />
+
 
 ## ❌ Legal & Ethical Notice
 This code must never be used:
@@ -153,19 +172,19 @@ Have ideas to improve this example? Want to add encoded shellcode, stageless pay
 
 ✅ **Links**  
 
-[+] CGOblin the big brother of gomulti_loader: https://github.com/grisuno/cgoblin
-[+] Shorts: https://www.youtube.com/shorts/kPZvVV_RNIE
-[+] Deepwiki: https://deepwiki.com/grisuno/gomulti_loader
-[+] gomulti_loader the little brother of CGOblin: https://github.com/grisuno/gomulti_loader
-[+] Deepwiki: https://deepwiki.com/grisuno/cgoblin
-[+] Github: https://github.com/grisuno/LazyOwn
-[+] Web: https://grisuno.github.io/LazyOwn/
-[+] Reddit: https://www.reddit.com/r/LazyOwn/
-[+] Facebook: https://web.facebook.com/profile.php?id=61560596232150
-[+] HackTheBox: https://app.hackthebox.com/teams/overview/6429
-[+] Grisun0: https://app.hackthebox.com/users/1998024
-[+] Patreon: https://patreon.com/LazyOwn
-[↙] Download: https://github.com/grisuno/LazyOwn/archive/refs/tags/release/0.2.48.tar.gz
+- [+] CGOblin the big brother of gomulti_loader: https://github.com/grisuno/cgoblin
+- [+] Shorts: https://www.youtube.com/shorts/kPZvVV_RNIE
+- [+] Deepwiki: https://deepwiki.com/grisuno/gomulti_loader
+- [+] gomulti_loader the little brother of CGOblin: https://github.com/grisuno/gomulti_loader
+- [+] Deepwiki: https://deepwiki.com/grisuno/cgoblin
+- [+] Github: https://github.com/grisuno/LazyOwn
+- [+] Web: https://grisuno.github.io/LazyOwn/
+- [+] Reddit: https://www.reddit.com/r/LazyOwn/
+- [+] Facebook: https://web.facebook.com/profile.php?id=61560596232150
+- [+] HackTheBox: https://app.hackthebox.com/teams/overview/6429
+- [+] Grisun0: https://app.hackthebox.com/users/1998024
+- [+] Patreon: https://patreon.com/LazyOwn
+- [↙] Download: https://github.com/grisuno/LazyOwn/archive/refs/tags/release/0.2.48.tar.gz
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
