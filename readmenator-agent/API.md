@@ -1,8 +1,15 @@
 # API
 
 ## main.go
-- `add` (function) `main.go:6` `func add(` -- go:noinline
-- `main` (function) `main.go:8` `func main(`
+
+### add (function) `func add(`
+- Defined: `main.go:6`
+- Doc: go:noinline
+
+### main (function) `func main(`
+- Defined: `main.go:8`
 
 ## shell.go
-- `main` (function) `shell.go:36` `func main(`
+
+### main (function) `func main(`
+- Defined: `shell.go:36`

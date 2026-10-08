@@ -6,6 +6,6 @@
 
 ## External Imports
 
-- `app.py` -> os
-- `main.go` -> fmt
-- `shell.go` -> C
+- `app.py` -> `os`
+- `main.go` -> `fmt`
+- `shell.go` -> `C`
